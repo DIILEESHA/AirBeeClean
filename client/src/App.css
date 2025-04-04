@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url("../fonts/Oswald-Medium.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sluss";
+  src: url("../fonts/Slussen-Mono-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "oswald2";
+  src: url("../fonts/Oswald-Bold.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "man";
+  src: url("../fonts/Manrope-Medium.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

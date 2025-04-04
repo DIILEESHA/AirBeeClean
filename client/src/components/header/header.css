@@ -1,0 +1,123 @@
+.header_container {
+  margin-top: 1px;
+  /* height: 100vh; */
+  position: relative;
+}
+
+.headr_img_container,
+.header_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+
+.header_title {
+  text-align: center;
+  font-family: "oswald";
+  width: 40%;
+  color: #fff;
+  font-size: 55px;
+  line-height: 130%;
+  margin-bottom: 35px;
+  text-shadow: 1px 1px 1px#000;
+}
+
+.star {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.star_icon {
+  width: 160px;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+.st {
+  color: #1b1a1a;
+  font-family: "sluss";
+  font-size: 15px;
+  /* font-weight: 500; */
+  margin-bottom: 20px;
+}
+
+.master_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding:60px 40px;
+  border-radius: 16px;
+
+  /* Glass Effect */
+  background: rgba(205, 213, 174, 0.7); /* Slight tint of #cdd5ae */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.header_para {
+  text-align: center;
+  font-family: "man";
+  margin-bottom: 20px;
+  line-height: 150%;
+  color: #1b1a1a;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.header_btn {
+  background-color: #fae084;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "oswald";
+  color: #1b1a1a;
+
+  font-size: 20px;
+  font-weight: 300;
+  border: 1px solid transparent;
+}
+
+.header_btn:hover {
+  background-color: transparent;
+  transition: 1s all ease-in-out;
+  border: 1px solid #333;
+}
+
+.btn_section {
+  display: flex;
+  gap: 10px;
+}
+
+.header_img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.header_img::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(61, 61, 60, 0.2)
+  ); /* Black fading into #cdd5ae */
+}
+
+.img_header {
+  height: 120vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header_card {
+  position: absolute;
+  inset: 0;
+}

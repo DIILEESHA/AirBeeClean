@@ -1,0 +1,166 @@
+.service_card_grid {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* gap: 20px; */
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  /* padding: 0px 50px; */
+}
+
+.ser_title {
+  font-family: "oswald";
+  text-align: center;
+  font-weight: 300;
+  font-size: 50px;
+  padding: 50px;
+}
+
+.service_container {
+  background-color: #f4f4f4;
+}
+
+.dol {
+  position: relative;
+}
+
+.halo {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.crus {
+  position: absolute;
+  right: 0;
+}
+
+.tin {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  border: none;
+}
+
+.service_sub_grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+  padding: 30px;
+  margin-bottom: 50px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.service_img {
+  margin-bottom: 20px;
+  width: 50px;
+}
+
+.service_name {
+  font-family: "sluss";
+  width: 100%;
+  /* text-align: center; */
+  font-weight: 600;
+  /* margin-bottom: 30px; */
+  color: #1b1a1a;
+
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.service_ul {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.service_li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: "man";
+  line-height: 150%;
+  /* list-style: circle; */
+}
+
+.devon {
+  padding: 0px 50px;
+}
+.bottom_btn {
+  background-color: #fae084;
+  border: none;
+  padding: 10px 40px;
+  font-family: "sluss";
+  text-transform: capitalize;
+  cursor: pointer;
+  width: 100%;
+}
+
+.bottom_btner {
+  position: fixed;
+  /* position: absolute; */
+  bottom: 30px;
+  /* width: 100%; */
+}
+
+.custom-swiper-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  /* inset: 0; */
+  right: 20px;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  align-items: center;
+}
+.bookin_process {
+  display: grid;
+  margin: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.hab {
+  width: 100%;
+  height: 30vh;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.bookin_sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book_title {
+  font-size: 28px;
+  font-family: "sluss";
+  color: #1b1a1a;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.book_p {
+  font-family: "man";
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 150%;
+}
