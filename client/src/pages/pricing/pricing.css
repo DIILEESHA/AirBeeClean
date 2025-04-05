@@ -1,0 +1,205 @@
+.pricing_container {
+  padding-top: 50px;
+  background-color: #f4f4f4;
+}
+
+.prcing_grid_contain {
+  padding: 50px;
+}
+
+.pricing_main {
+  color: #1b1a1a;
+  font-family: "sluss";
+  font-size: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.pricing_grid {
+  margin-bottom: 50px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* gap: 20px; */
+}
+
+.maliya {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing_sub {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+}
+
+.pricing_sub_title {
+  color: #1b1a1a;
+  font-family: "oswald";
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.line {
+  margin: 15px 0;
+  background-color: #dad2d2;
+  width: 100%;
+  height: 1px;
+}
+
+.lines {
+  margin: -20px 0 40px 0;
+  background-color: #c9c3c3;
+  width: 100%;
+  height: 1px;
+}
+
+.main_price {
+  font-family: "sluss";
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.ffr {
+}
+
+.slider_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin-bottom: 30px;
+  gap: 50px;
+}
+
+.resizer {
+  width: 60px;
+  object-fit: contain;
+}
+
+.dem {
+  cursor: pointer;
+}
+
+.left_arrow {
+  transform: rotate(180deg);
+  margin-top: -5px;
+}
+
+.see_more_btn {
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "man";
+  font-weight: 300;
+  font-size: 13px;
+  border: none;
+}
+
+.pricing_para {
+  font-family: "man";
+  font-size: 17px;
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+
+.ri_icon {
+  background-color: #fae084;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.bull {
+  font-size: 15px;
+}
+
+.commit_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.commit_li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "man";
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.commitment_section {
+  margin: 10px 0px 20px 0;
+}
+
+.services_section {
+  margin-top: 20px;
+}
+
+.service_title {
+  color: #1b1a1a;
+  font-family: "sluss";
+  font-weight: 600;
+  /* margin-bottom: -10px; */
+  font-size: 17px;
+}
+
+.servicez_ul {
+  margin: 0 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.se_li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.serz_name {
+  list-style: none;
+  font-family: "man";
+  font-size: 15px;
+  font-weight: 300;
+}
+.lpo {
+  font-weight: 900;
+  font-family: "sluss";
+}
+
+.kera {
+  font-size: 16px;
+}
+
+.price_btn {
+  margin-top: 30px;
+  width: 100%;
+}
+.book {
+  background-color: #fae084;
+  color: #1b1a1a;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: "sluss";
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+}
+.bottom_grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
