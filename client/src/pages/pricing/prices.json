@@ -1,0 +1,75 @@
+{
+    "generalCleaning": [
+      {
+        "propertyType": "Studio / 1-Bed Flat",
+        "cleanOnlyPrice": 65
+      },
+      {
+        "propertyType": "2-Bedroom Flat",
+        "cleanOnlyPrice": 80
+      },
+      {
+        "propertyType": "2-Bedroom House",
+        "cleanOnlyPrice": 105
+      },
+      {
+        "propertyType": "3-Bedroom House",
+        "cleanOnlyPrice": 135
+      },
+      {
+        "propertyType": "4-Bedroom House",
+        "cleanOnlyPrice": 175
+      }
+    ],
+    "addons": [
+      {
+        "service": "Carpet Cleaning (per room)",
+        "priceFrom": "£30"
+      },
+      {
+        "service": "Whole House Carpet Cleaning",
+        "priceFrom": "£120–£250"
+      },
+      {
+        "service": "Internal Window Cleaning",
+        "priceFrom": "£35–£60"
+      },
+      {
+        "service": "Fridge/Freezer Cleaning",
+        "priceFrom": "£40"
+      },
+      {
+        "service": "Kitchen Cupboards (Inside only)",
+        "priceFrom": "£25–£35"
+      },
+      {
+        "service": "Curtain Cleaning (per pair)",
+        "priceFrom": "£30"
+      },
+      {
+        "service": "Upholstery / Sofa Cleaning",
+        "priceFrom": "£50–£70"
+      },
+      {
+        "service": "Mattress Cleaning (per bed)",
+        "priceFrom": "£30–£50"
+      },
+      {
+        "service": "Furniture Dusting + Deep Polish",
+        "priceFrom": "£30–£55"
+      },
+      {
+        "service": "Balcony / Patio Sweep",
+        "priceFrom": "£25–£40"
+      },
+      {
+        "service": "Linen Change Only",
+        "priceFrom": "£20"
+      },
+      {
+        "service": "Pet Hair Removal",
+        "priceFrom": "+£25"
+      }
+    ]
+  }
+  

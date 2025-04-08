@@ -1,18 +1,51 @@
 .nav {
   height: 14vh;
   position: sticky;
-  border-bottom: 2px solid #565454;
+  border-bottom: 2px solid #ede9e9;
   top: 0;
   width: 100%;
   background-color: #fff;
-  padding: 20px 20px;
+  justify-content: space-between;
+  padding: 20px 50px;
   z-index: 1000000;
   display: flex;
   align-items: center;
+}
+
+.nav_li:hover {
+  transition: 1s all ease-in-out;
+  cursor: pointer;
+  color: #333;
+  opacity: 50%;
+  text-decoration: underline;
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+}
+
+.jkob {
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 10px 15px;
+  background-color: #fae084;
 }
 .nav_logo {
   height: auto;
   background-blend-mode: color-burn;
   width: 170px;
   object-fit: contain;
+}
+
+.nav_ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_li {
+  font-family: "man";
+  font-weight: 300;
+  list-style: none;
 }

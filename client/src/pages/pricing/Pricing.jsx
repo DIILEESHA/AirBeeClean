@@ -6,9 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
+import Prices from "./prices.json";
 const Pricing = () => {
   const [pricing, setPricing] = useState([]);
+  const [showAllAddons, setShowAllAddons] = useState(false);
 
   useEffect(() => {
     const fetchServices = async () => {
@@ -24,7 +25,9 @@ const Pricing = () => {
 
   return (
     <div className="pricing_container">
-      <h2 className="ser_title">Cleaning services for just about anyone</h2>
+      <div className="maho">
+        <h2 className="header_titles">Starting Rates by Home Size</h2>
+      </div>
       <div className="prcing_grid_contain">
         <div className="maliya">
           <h2 className="pricing_main">
@@ -192,16 +195,85 @@ const Pricing = () => {
                 Fast, professional resets with optional linen service—perfect
                 for Airbnb, Turno, or short-stay hosts.
               </p>
+
+              <div className="table_view">
+                <div className="tab">
+                  <div className="row_view">
+                    <h2 className="prop">Property Type </h2>
+                  </div>
+                  <div className="row_view">
+                    <h2 className="prop">Clean Only</h2>
+                  </div>
+                </div>
+                <div className="line"></div>
+
+                {/* {pricing.map((indexs, i) => { */}
+
+                {Prices.generalCleaning.map((priced, idx) => (
+                  <div className="tab" key={idx}>
+                    <div className="row_view">
+                      <h2 className="prop max">{priced?.propertyType}</h2>
+                    </div>
+                    <div className="row_view">
+                      <h2 className="prop max">{priced.cleanOnlyPrice}</h2>
+                    </div>
+                  </div>
+                  // })}
+                ))}
+
+                <div className="line"></div>
+              </div>
             </div>
           </div>
           <div className="bottom_subs">
             <div className="pricing_sub">
               <h2 className="pricing_main">✨Add-On & Specialist Services</h2>
-              <div className="line"></div>{" "}
+              <div className="line"></div>
               <p className="pricing_para">
                 Enhance your clean with specialist solutions for fabrics,
                 furniture, and more.
               </p>
+
+              <div className="table_view">
+                <div className="tab">
+                  <div className="row_view">
+                    <h2 className="prop">Service</h2>
+                  </div>
+                  <div className="row_view">
+                    <h2 className="prop">Price (From)</h2>
+                  </div>
+                </div>
+                <div className="line"></div>
+
+                {(showAllAddons
+                  ? Prices.addons
+                  : Prices.addons.slice(0, 4)
+                ).map((addon, idx) => (
+                  <div className="tab" key={idx}>
+                    <div className="row_view">
+                      <h2 className="prop max">{addon.service}</h2>
+                    </div>
+                    <div className="row_view">
+                      <h2 className="prop max">{addon.priceFrom}</h2>
+                    </div>
+                  </div>
+                ))}
+
+                {Prices.addons.length > 3 && (
+                  <div className="see_more_container">
+                    <button
+                      className="see_more_btn"
+                      onClick={() => setShowAllAddons(!showAllAddons)}
+                    >
+                      {showAllAddons
+                        ? "See less services"
+                        : "Click here to See more services"}
+                    </button>
+                  </div>
+                )}
+
+                <div className="line"></div>
+              </div>
             </div>
           </div>
         </div>
