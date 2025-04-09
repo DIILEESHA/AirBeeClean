@@ -56,7 +56,7 @@
 
   /* Glass Effect */
   background: rgba(205, 213, 174, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(10px);
@@ -106,8 +106,8 @@
   content: "";
   inset: 0;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(61, 61, 60, 0.2)
+    rgba(0, 0, 0, 0.3),
+    rgba(61, 61, 60, 0.4)
   ); /* Black fading into #cdd5ae */
 }
 

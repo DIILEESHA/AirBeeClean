@@ -12,6 +12,7 @@ const Header = () => {
           />
         </div>
         <div className="header_card">
+          
           <h2 className="header_title">
             Looking for domestic cleaning company?
           </h2>

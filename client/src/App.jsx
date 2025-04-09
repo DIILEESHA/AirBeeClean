@@ -14,6 +14,7 @@ import "./App.css";
 import Single from "./components/single/Single";
 
 import ScrollToTop from "./ScrollToTop";
+import Contact from "./pages/contact/Contact";
 
 const App = () => {
   useEffect(() => {
@@ -49,6 +50,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           {/* <Route path="/single" element={<Single />} /> */}
           <Route path="/service/:slug" element={<Single />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>

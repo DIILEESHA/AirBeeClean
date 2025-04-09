@@ -38,7 +38,9 @@ const Nav = () => {
       <div className="nav_left">
         <ul className="nav_ul">
           <li className="nav_li">+122345647</li>
-          <li className="nav_li jkob">Contact Us</li>
+          <Link className="a" to="/contact">
+            <li className="nav_li jkob">Contact Us</li>
+          </Link>
         </ul>
       </div>
     </div>
