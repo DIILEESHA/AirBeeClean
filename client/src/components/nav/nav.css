@@ -46,6 +46,7 @@
 
 .nav_li {
   font-family: "man";
-  font-weight: 300;
+  color: #1a1a1a;
+  /* font-weight: 700; */
   list-style: none;
 }

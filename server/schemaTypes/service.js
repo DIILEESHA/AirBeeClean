@@ -10,6 +10,16 @@ export default defineType({
       title: "Service Title",
       type: "string",
     }),
+
+    defineField({
+      name: "slug",
+      title: "slug",
+      type: "slug",
+      options: {
+        source: "title",
+        maxLength: 96,
+      },
+    }),
     defineField({
       name: "image",
       title: "Service Image",
@@ -22,7 +32,7 @@ export default defineType({
       name: "features",
       title: "Service Features",
       type: "array",
-      of: [{ type: "string" }], 
+      of: [{ type: "string" }],
     }),
   ],
 

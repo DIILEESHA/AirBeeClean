@@ -43,7 +43,7 @@ const Header = () => {
 
             <div className="btn_section">
               <button className="header_btn">Book your cleaner online</button>
-              <button className="header_btn">Enquire about our service</button>
+              {/* <button className="header_btn">Enquire about our service</button> */}
             </div>
           </div>
         </div>

@@ -1,0 +1,19 @@
+.l {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.p {
+  width: 400px;
+}
+
+.loading{
+    margin-top: -30px;
+    color: #1a1a1a;
+    text-transform: capitalize;
+    font-family: "oswald";
+    font-size: 30px;
+}

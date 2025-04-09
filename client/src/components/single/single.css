@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 50px;
-  padding:100px 50px;
-
+  padding: 10px 50px;
 }
 
 .single_container {
@@ -34,11 +33,20 @@
   gap: 16px;
 }
 
+.mty:hover {
+  text-decoration: underline;
+}
 .link_service_li {
   font-family: "man";
   font-weight: 300;
   list-style: none;
   list-style: inside;
+}
+
+.active_link {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .link_service_li:hover {
@@ -134,4 +142,20 @@
   line-height: 150%;
   font-size: 16px;
   margin-top: 20px;
+}
+
+.bread {
+  padding: 60px 50px;
+}
+
+.bread_ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.bread_li {
+  list-style: none;
+  font-family: "man";
+  font-size: 17px;
 }

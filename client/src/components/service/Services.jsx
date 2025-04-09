@@ -15,7 +15,7 @@ const Services = () => {
 
   useEffect(() => {
     client
-      .fetch(`*[_type == "service"]`)
+      .fetch(`*[_type == "service"]{ _id, title, image, features, slug }`)
       .then((data) => setServices(data))
       .catch(console.error);
   }, []);
@@ -40,44 +40,53 @@ const Services = () => {
             <MdArrowForwardIos className="halo" />
           </button>
         </div>
-
-        <Swiper
-          className="devon"
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={3}
-          onSwiper={(swiper) => (swiperRef.current = swiper)} // Store Swiper instance in ref
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 3000 }}
-          loop={true}
-          navigation={false} // Disable default navigation
+        <div
+          onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
+          onMouseLeave={() => swiperRef.current?.autoplay?.start()}
         >
-          {services.map((service) => (
-            <SwiperSlide key={service._id}>
-              <div className="service_sub_grid">
-                <img
-                  src={urlFor(service.image).url()}
-                  alt={service.title}
-                  className="service_img"
-                />
+          <Swiper
+            className="devon"
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={3}
+            onSwiper={(swiper) => (swiperRef.current = swiper)} // Store Swiper instance in ref
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000 }}
+            loop={true}
+            navigation={false} // Disable default navigation
+          >
+            {services.map((service) => (
+              <SwiperSlide key={service._id}>
+                <div className="service_sub_grid">
+                  <img
+                    src={urlFor(service.image).url()}
+                    alt={service.title}
+                    className="service_img"
+                  />
 
-                <p className="service_name">{service.title}</p>
-                <ul className="service_ul">
-                  {service.features?.map((feature, index) => (
-                    <li key={index} className="service_li">
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <div className="bottom_btner">
-                  <Link to={`/service/${service._id}`}>
-                    <button className="bottom_btn">Learn More</button>
-                  </Link>
+                  <p className="service_name">{service.title}</p>
+                  <ul className="service_ul">
+                    {service.features?.map((feature, index) => (
+                      <li key={index} className="service_li">
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="bottom_btner">
+                    <button className="bottom_btn">
+                      <Link
+                        className="a"
+                        to={`/service/${service.slug.current}`}
+                      >
+                        Learn More
+                      </Link>
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
       <h2 className="ser_title">Booking is quick and easy</h2>
 

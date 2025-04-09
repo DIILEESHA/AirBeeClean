@@ -3,6 +3,7 @@ import { client } from "../../sanityClient";
 import { PortableText } from "@portabletext/react";
 import "./bout.css";
 import Services from "../../components/service/Services";
+import Loader from "../../components/loader/Loader";
 
 const About = () => {
   const [aboutData, setAboutData] = useState(null);
@@ -25,7 +26,12 @@ const About = () => {
       .catch(console.error);
   }, []);
 
-  if (!aboutData) return <div>Loading...</div>;
+  if (!aboutData)
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
 
   return (
     <div className="abo">

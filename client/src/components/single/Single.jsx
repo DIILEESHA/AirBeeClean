@@ -5,12 +5,21 @@ import { CgMathMinus } from "react-icons/cg";
 import "./single.css";
 import { client } from "../../sanityClient"; // Adjust the path if needed
 import { PortableText } from "@portabletext/react";
+import Loader from "../loader/Loader";
 
 const Single = () => {
   const { slug } = useParams(); // Get the slug from the URL params
   const [activeIndex, setActiveIndex] = useState(0); // For accordion functionality
-  const [serviceData, setServiceData] = useState(null); // State to store fetched service data
+  const [serviceData, setServiceData] = useState(false); // State to store fetched service data
   const [expanded, setExpanded] = useState(false); // State to control "See More"/"See Less"
+
+  const links = [
+    { title: "Regular Home Cleaning", slug: "regular-home-cleaning" },
+    { title: "Deep Cleaning", slug: "deep-cleaning" },
+    { title: "Airbnb & Short-Stay Cleaning", slug: "airbnb-cleaning" },
+    { title: "End of Tenancy Cleaning", slug: "end-of-tenancy-cleaning" },
+    { title: "Office & Commercial Cleaning", slug: "office-cleaning" },
+  ];
 
   useEffect(() => {
     // Fetch content from Sanity based on the slug
@@ -59,7 +68,12 @@ const Single = () => {
   };
 
   // Show loading state until the data is fetched
-  if (!serviceData) return <div>Loading...</div>;
+  if (!serviceData)
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
 
   return (
     <div className="single_container">
@@ -76,36 +90,34 @@ const Single = () => {
         {/* </div> */}
       </div>
 
+      <div className="bread">
+        <ul className="bread_ul">
+          <Link className="a" to="/">
+            <li className="bread_li mty">Main page</li>
+          </Link>
+          <li className="bread_li">/</li>
+          <li className="bread_li">{serviceData.title}</li>
+        </ul>
+      </div>
+
       <div className="single_slider">
-      <div className="single_sub_slide">
+        <div className="single_sub_slide">
           <div className="link_card">
             <h2 className="link_service_card_title">Our Services</h2>
+            <div className="line"></div>
             <ul className="link_service_ul">
-              <li className="link_service_li">
-                <Link className="a" to="/service/regular-home-cleaning">
-                  Regular Home Cleaning
-                </Link>
-              </li>
-              <li className="link_service_li">
-                <Link className="a" to="/service/deep-cleaning">
-                  Deep Cleaning
-                </Link>
-              </li>
-              <li className="link_service_li">
-                <Link className="a" to="/service/airbnb-cleaning">
-                  Airbnb & Short-Stay Cleaning
-                </Link>
-              </li>
-              <li className="link_service_li">
-                <Link className="a" to="/service/end-of-tenancy-cleaning">
-                  End of Tenancy Cleaning
-                </Link>
-              </li>
-              <li className="link_service_li">
-                <Link className="a" to="/service/office-cleaning">
-                  Office & Commercial Cleaning
-                </Link>
-              </li>
+              {links.map((link, index) => (
+                <li
+                  key={index}
+                  className={`link_service_li ${
+                    slug === link.slug ? "active_link" : ""
+                  }`}
+                >
+                  <Link className="a" to={`/service/${link.slug}`}>
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -184,8 +196,6 @@ const Single = () => {
             ))}
           </div>
         </div>
-
-      
       </div>
     </div>
   );
