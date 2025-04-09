@@ -1,0 +1,137 @@
+.single_slider {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  padding:100px 50px;
+
+}
+
+.single_container {
+  background-color: #f4f4f4;
+}
+
+.link_card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+}
+.link_service_card_title {
+  font-family: "oswald";
+  font-weight: 300;
+  color: #1a1a1a;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+.link_service_ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 16px;
+}
+
+.link_service_li {
+  font-family: "man";
+  font-weight: 300;
+  list-style: none;
+  list-style: inside;
+}
+
+.link_service_li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.disa {
+}
+
+.imra {
+  height: 55vh;
+  position: relative;
+  /* position: absolute; */
+}
+
+.mlop {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imra::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(61, 61, 60, 0.2)
+  ); /* Black fading into #cdd5ae */
+}
+
+.kukka {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 0%;
+}
+
+.single_service_title {
+  font-family: "sluss";
+  color: #1a1a1a;
+  font-size: 25px;
+  /* margin-bottom: 30px; */
+}
+.single_service_top_para {
+  font-family: "man";
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.single_expand_card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+
+.nadan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.expand_card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service_expand_title {
+  color: #1a1a1a;
+  font-family: "man";
+  /* font-weight: 300; */
+  /* font-weight: 200; */
+  font-size: 17px;
+}
+
+.pluser {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.expand_body {
+  font-family: "man";
+  line-height: 150%;
+  font-size: 16px;
+  margin-top: 20px;
+}

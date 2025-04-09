@@ -7,11 +7,11 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
-        name: "sortOrder",
-        title: "Sort Order",
-        type: "number",
-      }),
-      
+      name: "sortOrder",
+      title: "Sort Order",
+      type: "number",
+    }),
+
     defineField({
       name: "title",
       title: "Title",
@@ -39,31 +39,31 @@ export default defineType({
       of: [{ type: "string" }],
     }),
     defineField({
-        name: "serviceOptions",
-        title: "Service Options",
-        type: "array",
-        of: [
-          {
-            type: "object",
-            name: "serviceOption",
-            title: "Service Option",
-            fields: [
-              {
-                name: "name",
-                title: "Name",
-                type: "string",
-              },
-              {
-                name: "price",
-                title: "Price",
-                type: "string",
-              },
-            ],
-          },
-        ],
-      }),
+      name: "serviceOptions",
+      title: "Service Options",
+      type: "array",
+      of: [
+        {
+          type: "object",
+          name: "serviceOption",
+          title: "Service Option",
+          fields: [
+            {
+              name: "name",
+              title: "Name",
+              type: "string",
+            },
+            {
+              name: "price",
+              title: "Price",
+              type: "string",
+            },
+          ],
+        },
+      ],
+    }),
 
-   
+
     defineField({
       name: "features",
       title: "Features",
