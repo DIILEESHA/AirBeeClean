@@ -134,6 +134,13 @@
     padding: 20px;
   }
 
+  .header_para {
+    font-size: 18px;
+  }
+  .st {
+    text-align: center;
+  }
+
   .img_header {
     height: auto;
     min-height: 100vh;

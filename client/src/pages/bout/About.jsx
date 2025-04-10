@@ -45,15 +45,15 @@ const About = () => {
 
       {/* Mission Section */}
       <div className="mission_base">
-        <div className="mision_grid">
-          <div className="mision_sub_grid">
+        <div className="mision_grid dsx">
+          <div className="mision_sub_grid ">
             <h2 className="our_mission">{aboutData.missiontitle}</h2>
             <div className="line"></div>
             <div className="our_mission_para">
               <PortableText value={aboutData.missionbody} />
             </div>
           </div>
-          <div className="mision_sub_grid">
+          <div className="mision_sub_grid ">
             <div className="mission_i">
               <img
                 src={aboutData.missionImage?.asset?.url}
@@ -69,7 +69,7 @@ const About = () => {
 
       {/* Commitment Section */}
       <div className="mission_base">
-        <div className="mision_grid">
+        <div className="mision_grid dlx">
           <div className="mision_sub_grid">
             <div className="mission_i">
               <img
