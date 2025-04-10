@@ -1,6 +1,5 @@
 import React from "react";
 import "./contact.css";
-import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (

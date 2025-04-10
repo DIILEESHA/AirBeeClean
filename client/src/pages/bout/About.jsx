@@ -4,7 +4,6 @@ import { PortableText } from "@portabletext/react";
 import "./bout.css";
 import Services from "../../components/service/Services";
 import Loader from "../../components/loader/Loader";
-import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const [aboutData, setAboutData] = useState(null);
