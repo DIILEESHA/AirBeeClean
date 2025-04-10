@@ -7,6 +7,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Prices from "./prices.json";
+import { Link } from "react-router-dom";
 const Pricing = () => {
   const [pricing, setPricing] = useState([]);
   const [showAllAddons, setShowAllAddons] = useState(false);
@@ -95,9 +96,9 @@ const Pricing = () => {
                   <div className="line"></div>
 
                   <h2 className="main_price">
-                    
                     <span className="wallapatta">from</span>
-                    {price.price}</h2>
+                    {price.price}
+                  </h2>
                   <p className="pricing_para">
                     {price.showFullDescription
                       ? price.description
@@ -198,7 +199,9 @@ const Pricing = () => {
                   )}
 
                   <div className="price_btn">
-                    <button className="book">book now</button>
+                    <Link to="/contact" className="a">
+                      <button className="book">book now</button>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>

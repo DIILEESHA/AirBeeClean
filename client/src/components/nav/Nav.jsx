@@ -3,6 +3,7 @@ import "./nav.css";
 import { Link } from "react-router-dom";
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import { BsTelephoneFill } from "react-icons/bs";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -60,7 +61,16 @@ const Nav = () => {
 
       <div className="nav_right">
         <ul className="nav_ul">
-          <li className="nav_li">+122345647</li>
+          <li className="nav_li">
+            <a
+              className="a"
+              style={{ display: "flex", alignItems: "center", gap: "5px" }}
+              href="tel:07958025970"
+            >
+              <BsTelephoneFill />
+              07958025970
+            </a>
+          </li>
           <li className="nav_li jkob">
             <Link className="a" to="/contact">
               Contact Us

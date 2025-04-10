@@ -1,9 +1,23 @@
 import React from "react";
 import "./contact.css";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
     <div>
+      <Helmet>
+        <title>Contact Us | AirBeeClean – Cambridge Cleaning Services</title>
+        <meta
+          name="description"
+          content="Get in touch with AirBeeClean for professional and eco-friendly cleaning services in Cambridge. Fill out our quick contact form to book a service."
+        />
+        <meta
+          name="keywords"
+          content="Cambridge cleaning, contact AirBeeClean, cleaning services, eco-friendly cleaners, booking cleaning Cambridge"
+        />
+        <meta name="author" content="AirBeeClean Team" />
+        {/* <link rel="canonical" href="https://your-website-url.com/contact" /> */}
+      </Helmet>
       <div className="mahos dawos">
         <h2 className="header_titles mahada">Contact AirBeeClean</h2>
       </div>

@@ -46,6 +46,9 @@
 
 .nav_li {
   font-family: "man";
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: #1a1a1a;
   /* font-weight: 700; */
   list-style: none;
@@ -69,9 +72,8 @@
     margin-left: -35px;
   }
 
-  .cmn{
-    width: 130px!important;
-
+  .cmn {
+    width: 130px !important;
   }
 
   .uu {

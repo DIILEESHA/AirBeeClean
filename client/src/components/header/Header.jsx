@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header_container">
@@ -12,7 +13,6 @@ const Header = () => {
           />
         </div>
         <div className="header_card">
-          
           <h2 className="header_title">
             Looking for domestic cleaning company?
           </h2>
@@ -43,7 +43,9 @@ const Header = () => {
             </div>
 
             <div className="btn_section">
-              <button className="header_btn">Book your cleaner online</button>
+              <Link to="/contact" className="a">
+                <button className="header_btn">Book your cleaner online</button>
+              </Link>
               {/* <button className="header_btn">Enquire about our service</button> */}
             </div>
           </div>

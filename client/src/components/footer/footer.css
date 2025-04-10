@@ -1,7 +1,6 @@
 .footer {
   background: rgba(205, 213, 174, 0.9);
   /* background: rgba(195, 225, 75, 0.9); */
-
 }
 
 .foos {
@@ -13,7 +12,9 @@
   justify-content: flex-start;
   width: 100%;
 }
-
+.footer_li:hover {
+  text-decoration: underline;
+}
 .footer_imgyu {
   margin-left: -60px;
   width: 200px;

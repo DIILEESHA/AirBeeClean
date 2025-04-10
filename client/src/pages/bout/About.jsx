@@ -4,6 +4,7 @@ import { PortableText } from "@portabletext/react";
 import "./bout.css";
 import Services from "../../components/service/Services";
 import Loader from "../../components/loader/Loader";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const [aboutData, setAboutData] = useState(null);
@@ -35,6 +36,20 @@ const About = () => {
 
   return (
     <div className="abo">
+      <Helmet>
+        <title>About Us – AirBeeClean | Cambridge Cleaning Experts</title>
+        <meta
+          name="description"
+          content="Meet the team behind AirBeeClean. Discover our mission, values, and commitment to providing eco-friendly and reliable cleaning services in Cambridge and nearby areas."
+        />
+        <meta
+          name="keywords"
+          content="About AirBeeClean, Cambridge cleaning company, professional cleaning, eco-friendly cleaners, team values, cleaning mission"
+        />
+        <meta name="author" content="AirBeeClean Team" />
+        {/* <link rel="canonical" href="https://your-website-url.com/about" /> */}
+      </Helmet>
+
       <div className="mahos">
         <h2 className="header_titles"> {aboutData.title}</h2>
       </div>
