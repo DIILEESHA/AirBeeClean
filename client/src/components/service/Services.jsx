@@ -48,7 +48,7 @@ const Services = () => {
             className="devon"
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}
-            slidesPerView={3} // Default for mobile
+            slidesPerView={1} // Default for mobile
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000 }}
