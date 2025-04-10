@@ -271,6 +271,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  .pricing_sub {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 827px) {
