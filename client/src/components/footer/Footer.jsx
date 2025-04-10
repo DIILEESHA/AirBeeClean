@@ -23,15 +23,15 @@ const Footer = () => {
             <ul className="footer_ul">
               <li className="footer_li">
                 <IoMail />
-                info@prohousekeepers.com
+                airbeeclean@gmail.com
               </li>
               <li className="footer_li">
                 <BsTelephoneFill />
-                (844) 242-9464
+                07958025970
               </li>
               <li className="footer_li">
                 <IoMdHome />
-                Headquartered in Tampa Bay
+                Cambridge, UK
               </li>
             </ul>
           </div>
