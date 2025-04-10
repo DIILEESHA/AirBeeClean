@@ -114,7 +114,13 @@
     font-size: 40px;
   }
 
-  .mahos{
+  .mission_img {
+    height: 50vh;
+
+    object-position: center 20%;
+  }
+
+  .mahos {
     height: 40vh;
   }
 }
