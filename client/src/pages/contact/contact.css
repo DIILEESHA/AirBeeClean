@@ -71,3 +71,17 @@
 .one {
   grid-column: 1/3;
 }
+
+@media screen and (max-width: 1140px) {
+  .lokesh {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .lokesh {
+    padding: 50px 20px;
+  }
+  .contact_form {
+    padding: 20px;
+  }
+}

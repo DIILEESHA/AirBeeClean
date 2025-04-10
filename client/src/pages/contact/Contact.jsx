@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div>
       <div className="mahos dawos">
-        <h2 className="header_titles">Contact AirBeeClean</h2>
+        <h2 className="header_titles mahada">Contact AirBeeClean</h2>
       </div>
       <div className="lokesh">
         <h2 className="loka">Let's Get Started</h2>
