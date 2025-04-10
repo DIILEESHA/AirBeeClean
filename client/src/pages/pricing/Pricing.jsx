@@ -26,7 +26,7 @@ const Pricing = () => {
   return (
     <div className="pricing_container">
       <div className="maho">
-        <h2 className="header_titles">Starting Rates by Home Size</h2>
+        <h2 className="header_titles mahada">Starting Rates by Home Size</h2>
       </div>
       <div className="prcing_grid_contain">
         <div className="maliya">
@@ -94,7 +94,10 @@ const Pricing = () => {
                   <h2 className="pricing_sub_title">{price.subtitle}</h2>
                   <div className="line"></div>
 
-                  <h2 className="main_price">{price.price}</h2>
+                  <h2 className="main_price">
+                    
+                    <span className="wallapatta">from</span>
+                    {price.price}</h2>
                   <p className="pricing_para">
                     {price.showFullDescription
                       ? price.description

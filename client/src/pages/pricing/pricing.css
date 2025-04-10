@@ -257,6 +257,12 @@
   font-family: "man";
   font-size: 15px;
 }
+
+.wallapatta {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 0 10px 0px 0px;
+}
 @media screen and (max-width: 900px) {
   .prcing_grid_contain {
     padding: 20px 20px 70px 20px;
@@ -266,6 +272,18 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 827px) {
+  .maho {
+    height: 30vh;
+  }
+
+  .mahada {
+    font-size: 35px !important;
+    width: 70% !important;
+    line-height: 150% !important;
+  }
+}
 @media screen and (max-width: 782px) {
   .maliya {
     display: flex;
@@ -273,6 +291,21 @@
   }
   .resizer {
     width: 40px;
+  }
+
+  .pricing_main {
+    font-size: 18px;
+  }
+
+  .pricing_para {
+    font-size: 16px;
+  }
+  .max {
+    font-size: 15px;
+  }
+
+  .pricing_sub_title {
+    font-size: 20px;
   }
 
   .pricing_main {
