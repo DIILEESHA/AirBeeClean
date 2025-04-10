@@ -11,7 +11,7 @@ import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 const Services = () => {
   const [services, setServices] = useState([]);
-  const swiperRef = useRef(null); // Reference for Swiper instance
+  const swiperRef = useRef(null);
 
   useEffect(() => {
     client
@@ -48,12 +48,29 @@ const Services = () => {
             className="devon"
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}
-            slidesPerView={3}
-            onSwiper={(swiper) => (swiperRef.current = swiper)} // Store Swiper instance in ref
+            slidesPerView={3} // Default for mobile
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000 }}
             loop={true}
-            navigation={false} // Disable default navigation
+            navigation={false}
+            breakpoints={{
+              // When window width is >= 480px
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 15
+              },
+              // When window width is >= 640px
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+              },
+              // When window width is >= 1024px
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+              }
+            }}
           >
             {services.map((service) => (
               <SwiperSlide key={service._id}>

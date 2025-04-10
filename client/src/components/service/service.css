@@ -166,3 +166,27 @@
   margin-bottom: 60px;
   line-height: 150%;
 }
+
+@media screen and (max-width: 1044px) {
+  .bookin_process {
+    display: flex;
+    flex-direction: column;
+  }
+  .book_title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .ser_title,
+  .book_title {
+    font-size: 35px;
+  }
+
+  .book_title {
+    font-size: 30px;
+  }
+  .devon {
+    padding: 0 30px;
+  }
+}

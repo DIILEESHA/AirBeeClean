@@ -1,6 +1,5 @@
 .footer {
   background: rgba(205, 213, 174, 0.9);
-  
 }
 
 .foos {
@@ -50,7 +49,7 @@
 
 .dddd {
   background-color: #282727;
-  padding:10px 20px;
+  padding: 10px 20px;
   color: #fff;
   font-family: "man";
   font-weight: 300;
@@ -63,4 +62,19 @@
   border-top-color: #736e6e;
   border-right-color: transparent;
   border-left-color: transparent;
+}
+
+@media screen and (max-width: 1043px) {
+  .footer_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 681px) {
+  .footer_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .foos {
+    padding:20px 20px 50px 20px;
+  }
 }

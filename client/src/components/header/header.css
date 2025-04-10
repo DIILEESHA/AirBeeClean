@@ -1,6 +1,7 @@
 .header_container {
   margin-top: 1px;
   /* height: 100vh; */
+  min-height: 100vh;
   position: relative;
 }
 
@@ -51,7 +52,7 @@
   align-items: center;
   justify-content: center;
   width: 60%;
-  padding:60px 40px;
+  padding: 60px 40px;
   border-radius: 16px;
 
   /* Glass Effect */
@@ -120,4 +121,16 @@
 .header_card {
   position: absolute;
   inset: 0;
+}
+
+@media screen and (max-width: 989px) {
+  .header_title {
+    font-size: 40px;
+    width: 80%;
+  }
+
+  .master_card {
+    width: 90%;
+    padding: 20px;
+  }
 }
