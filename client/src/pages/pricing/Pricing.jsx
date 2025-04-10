@@ -59,16 +59,33 @@ const Pricing = () => {
         <div className="pricing_grid">
           <Swiper
             modules={[Navigation]}
-            slidesPerView={3} // Adjust per screen size
-            spaceBetween={30}
+            spaceBetween={20}
+            slidesPerView={1} // Default for mobile
             navigation={{
               nextEl: ".right_arrow",
               prevEl: ".left_arrow",
             }}
             breakpoints={{
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-              1440: { slidesPerView: 4 },
+              // When window width is >= 576px (small tablets)
+              676: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              // When window width is >= 768px (tablets)
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              // When window width is >= 992px (small desktops)
+              992: {
+                slidesPerView: 2,
+                spaceBetween: 25,
+              },
+              // When window width is >= 1200px (desktops)
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
             }}
           >
             {pricing.map((price, idx) => (

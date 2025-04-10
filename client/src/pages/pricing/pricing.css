@@ -257,3 +257,33 @@
   font-family: "man";
   font-size: 15px;
 }
+@media screen and (max-width: 900px) {
+  .prcing_grid_contain {
+    padding: 20px 20px 70px 20px;
+  }
+  .bottom_grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 782px) {
+  .maliya {
+    display: flex;
+    flex-direction: column;
+  }
+  .resizer {
+    width: 40px;
+  }
+
+  .pricing_main {
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 150%;
+  }
+
+  .slider_arrow {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
