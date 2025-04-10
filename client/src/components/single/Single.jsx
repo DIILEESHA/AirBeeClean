@@ -6,6 +6,7 @@ import "./single.css";
 import { client } from "../../sanityClient"; // Adjust the path if needed
 import { PortableText } from "@portabletext/react";
 import Loader from "../loader/Loader";
+import { IoMdHome } from "react-icons/io";
 
 const Single = () => {
   const { slug } = useParams(); // Get the slug from the URL params
@@ -85,7 +86,7 @@ const Single = () => {
           alt="Top Image"
         />
         <div className="mlop">
-          <h2 className="header_titles">{serviceData.title}</h2>
+          <h2 className="header_titles mahada">{serviceData.title}</h2>
         </div>
         {/* </div> */}
       </div>
@@ -93,10 +94,12 @@ const Single = () => {
       <div className="bread">
         <ul className="bread_ul">
           <Link className="a" to="/">
-            <li className="bread_li mty">Main page</li>
+            <li className="bread_li mty">
+              <IoMdHome />
+            </li>
           </Link>
           <li className="bread_li">/</li>
-          <li className="bread_li">{serviceData.title}</li>
+          <li className="bread_li">{serviceData.title.slice(0, 40)}...</li>
         </ul>
       </div>
 

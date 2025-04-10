@@ -159,3 +159,27 @@
   font-family: "man";
   font-size: 17px;
 }
+@media screen and (max-width: 1084px) {
+  .single_slider {
+    padding: 20px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 917px) {
+  .single_slider {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 70px;
+  }
+
+  .imra {
+    height: 35vh;
+  }
+
+  .bread {
+    padding: 20px;
+    align-items: center;
+    display: flex;
+  }
+}
