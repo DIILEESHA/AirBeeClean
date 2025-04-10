@@ -1,7 +1,7 @@
 .header_container {
   margin-top: 1px;
   /* height: 100vh; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
 }
 
@@ -132,5 +132,10 @@
   .master_card {
     width: 90%;
     padding: 20px;
+  }
+
+  .img_header {
+    height: auto;
+    min-height: 100vh;
   }
 }
